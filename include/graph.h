@@ -55,11 +55,11 @@ public:
            return;
        }
        //Ideally I want to know the terminal width...
-        for (int i = 0;  i < thePad->padSize().first + 2;  i++)
+        for (size_t i = 0;  i < thePad->padSize().first + 2;  i++)
             std::cout<<"=";
         std::cout << std::endl;
         std::cout << title << std::endl;
-        for (int i = 0;  i < thePad->padSize().first + 2;  i++)
+        for (size_t i = 0;  i < thePad->padSize().first + 2;  i++)
             std::cout<<"=";
         std::cout << std::endl;
         
@@ -68,12 +68,12 @@ public:
         // TODO: Pad by the number of columns the YAxis label will need
 
         std::cout<<" *";
-        for (int i = 0;  i < thePad->padSize().first;  i++)
+        for (size_t i = 0;  i < thePad->padSize().first;  i++)
            std::cout<<"-";
         std::cout<<"*"<<std::endl;
 
         // Sides and pad drawing
-        for (int i = 0; i < thePad->padSize().second; i++)
+        for (size_t i = 0; i < thePad->padSize().second; i++)
         {
             
             // TODO: Centre the YAxis label vertically
@@ -88,7 +88,7 @@ public:
 
         // Bottom border
         std::cout<<" *";
-        for (int i = 0;  i < thePad->padSize().first;  i++)
+        for (size_t i = 0;  i < thePad->padSize().first;  i++)
            std::cout<<"-";
         std::cout<<"*"<<std::endl;
         
